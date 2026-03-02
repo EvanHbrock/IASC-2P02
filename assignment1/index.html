@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Assignment 1
+    </title>
+    <!--css-->
+    <link rel="stylesheet" href="style.css">
+    <!--threejs import map-->
+    <script type="importmap">
+  {
+    "imports": {
+      "three": "https://ga.jspm.io/npm:three@0.182.0/build/three.module.js",
+      "OrbitControls": "https://ga.jspm.io/npm:three@0.182.0/examples/jsm/controls/OrbitControls.js",
+      "lil-gui": "https://ga.jspm.io/npm:lil-gui@0.21.0/dist/lil-gui.esm.js"
+    }
+  }
+    </script>
+
+    <!--three.js scene-->
+    <script src="script.js" type="module"></script>
+    
+</head>
+<body>
+  <div class="flexbox">
+    <!-- ESSAY -->
+    <div class="essay">
+      <h2>1. Flatness</h2>
+      <p>In this 3D model we are first limited to the 2d perspective of the cave wall and can only see the shadows cast upon it. The people without the ability to see the objects that are casting the shadow, may believe anything that they can come up with that the limited facts can produce. So if the people in the cave can see a<span class="clickable" id="part-one"> large sphere and a small sphere</span>, they may believe that one is the sun and the other is the earth. This can be tied to the limited understanding of cosmology in medieval Europe. In medieval Europe, the understanding of the solar system along with all other mechanisms of the universe, came from what the Church believed was true. So if the Church believed that the <span class="clickable" id="first-change">sun revolved around the earth</span>, then their power and overwhelming trust led the people to believe that that was the case. This connects to Nick Sousanis's concept of Flatness from his book ‘Unflattening’ because the church's authority connects to the boundary of perception, and the cave walls. As well as how the shadows are the accepted truths the people of the cave take as gospel.</p>
+
+      <p>If the limited perspective of the shadows on the cave wall can create misconceptions about the identity of the objects that can be seen casting shadows, then the people of the cave wouldn’t be able to perceive something that isn't casting a shadow at all. Take the light source itself for example, if it were to <span class="clickable" id="second-change">shift forwards and backwards</span> then the size of the objects would shift and warp in ways the flat people may not understand. The flat people of the cave wouldn’t be able to conceive the double vision and deduce that it’s the light itself that's moving. They may believe that the sun and earth itself is changing sizes.</p>
+
+      <h2>2. Seeing Double</h2>
+      <p>When the perspective changes, we are able to see <span class="clickable" id="part-two">the 3D objects only</span>, and the people of the 3D universe with their expanded view. It becomes clear that the larger sphere is not the earth but the sun, as we can see it's color and texture now. The same witht he smaller sphere int hat we can see its blue, and it's the earth thats revolving aorund the sun. What once appeared to be a sun revolving around a stationary earth is revealed to be the opposite. The misunderstanding was not caused by a lack of intelligence, but by a lack of dimensional access. By stepping outside of the cave and observing the full spatial relationship between the objects, we are able to understand the heliocentric structure of the solar system. This mirrors the shift in cosmological understanding that occurred when scientists began to question the geocentric model and propose that the earth moves around the sun. However, another change that the people of the flat cave would not be able to understand, is if the earth had a <span class="clickable" id="third-change">non-2D orbit</span>. This can be seen by the 3D people as they can realize the orbit is tilted.</p>
+
+      <p>However, true understanding does not simply come from rejecting the shadows, but from being able to see both the object and its projection at the same time. When the orbit expands into a more complex motion and we can observe <span class="clickable" id="forth-change">the tilted three-dimensional orbit</span> while the shadow still appears on the wall, we begin to grasp the relationship between the shadow and its casting object. Now we see the movement is coherent and structured, even if the shadow it produces appears distorted or confusing. This connects to Nick Sousanis’s concept of “Seeing Double” which involves holding multiple perspectives at once rather than replacing one with another. An example of someone in old cosmology that could see multiple perspectives was Galileo. The people outside the cave (such as Galileo) can understand why the shadows had seemed convincing to the cave people (or the church when it believed the solar system was geocentric), while also recognizing the deeper structure that creates their beliefs. In this view, we not only escaped Flatness, but also integrated both views, and understand how limited perception shaped their beliefs, and how this expanded dimensional awareness transforms it. Seeing Double allows us to recognize that the shadow was just an incomplete version of the whole picture.</p>
+    
+    </div>
+    <!-- SCENE -->
+     <div class="scene">
+      <canvas class="webgl"></canvas>
+    </div>
+  </div>
+</body>
