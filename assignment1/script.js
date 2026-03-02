@@ -63,15 +63,15 @@ scene.add(cave)
 
 //objects
 const SphereGeometry = new THREE.SphereGeometry(0.3, 100)
-const SphereMaterial = new THREE.MeshNormalMaterial()
+const SphereMaterial = new THREE.MeshStandardMaterial({color: 'blue'})
 const Sphere = new THREE.Mesh(SphereGeometry, SphereMaterial)
 Sphere.position.set(6, 2, 0)
 Sphere.castShadow = true
 scene.add(Sphere)
 
 const Sphere2Geometry = new THREE.SphereGeometry(1, 100)
-const Sphere2Material = new THREE.MeshNormalMaterial()
-const Sphere2 = new THREE.Mesh(Sphere2Geometry, SphereMaterial)
+const Sphere2Material = new THREE.MeshStandardMaterial({color: 'yellow'})
+const Sphere2 = new THREE.Mesh(Sphere2Geometry, Sphere2Material)
 Sphere2.position.set(6, 0, 0)
 Sphere2.castShadow = true
 scene.add(Sphere2)
@@ -84,7 +84,7 @@ scene.add(Sphere2)
 //Point Light
 const PointLight = new THREE.PointLight(
     new THREE.Color('white'),
-    300, 100
+    300, 300
 )
 scene.add(PointLight)
 PointLight.position.set(20, 0, 0)
